@@ -1,4 +1,4 @@
-package ariefbelajardikampus.materialprodasar.materi;
+package ariefbelajardikampus.materialprodasar.materi.pendahuluan;
 
 import java.util.Scanner;
 
