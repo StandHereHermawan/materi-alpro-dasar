@@ -11,7 +11,7 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
 
 //      Datatype Dictionary
-        String leftAlignFormat,
+        String  leftAlignFormat,
                 bodyTableDummy,
                 borderTableFormat1,
                 borderTableFormat2,
@@ -28,10 +28,15 @@ public class Task2 {
                 sedang,
                 rendah;
 
-        int gajiRahma = 3_000_000;
-        int gajiDinar = 4_500_000;
-        int gajiTaufan = 1_800_000;
-        int gajiMichael = 2_500_000;
+        int     gajiRahma,
+                gajiDinar,
+                gajiMichael,
+                gajiTaufan;
+
+        gajiRahma = 3_000_000;
+        gajiDinar = 4_500_000;
+        gajiTaufan = 1_800_000;
+        gajiMichael = 2_500_000;
 
 //      Column and Row Formatting
         leftAlignFormat2
@@ -152,8 +157,11 @@ public class Task2 {
                     out.println("Pilihan Tidak Ada Dalam menu.");
                 }
 
+            } else if (inputMainMenu == 4) {
+                out.println("Program Berakhir");
+                break;
             } else {
-                // out.println("Pilihan Tidak Ada Dalam menu.");
+                out.println("Pilihan Tidak Ada Dalam menu.");
             }
 
             if (inputMainMenu == 4) {
@@ -161,9 +169,8 @@ public class Task2 {
                 break;
             }
 
-            out.println("Program Berulang");
+            out.println("Program Berulang\n");
         }
-
 
 //      out.printf(borderTableFormat2);
 //      out.printf(leftAlignFormat, "Nama", "Gaji");
@@ -188,15 +195,18 @@ public class Task2 {
                 = "+ - - - - - - - - + - - - - +%n";
 
 //      nameInput = "Masukkan Nama : ";
+
 //      out.println(programUTS);
 //      out.println("Menu");
 //      out.println("1. Tampilkan Semua Data Tanpa Jenis Gaji");
 //      out.println("2. Pilih Dan Tampilkan Jenis Gaji Satu Data");
 //      out.println("3. Pilih Dan Tampilkan Jenis Gaji semua Data");
 //      out.println();
+
 //      out.print("Input Angka Sesuai Menu : ");
 //      int inputMainMenu = scanner.nextInt();
 //      out.println();
+//
 //      out.println("pilihan yang dipilih : " + inputMainMenu);
 
 //      System.out.printf(borderTableFormat1);
