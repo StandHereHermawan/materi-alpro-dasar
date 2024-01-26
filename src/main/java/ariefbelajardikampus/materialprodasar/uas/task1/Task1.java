@@ -4,13 +4,29 @@ import java.util.Scanner;
 
 public class Task1 {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String[] string = new String[5];
-        int index = 0;
+        String[] string = new String[6];
+        int indexQuery = 1;
+        int indexInput = 1;
 
-        System.out.print("Masukkan Input Data Pertama : ");
+        while (indexInput != 6){
+            System.out.print("Masukkan Input Data ke "+indexInput+" : ");
+            String inputData = scanner.next();
+            string[indexInput] = inputData;
+            indexInput = indexInput + 1;
+        }
+
+        System.out.print("\n");
+
+        do {
+            System.out.println("Data ke: " + indexQuery + " : " + string[indexQuery]);
+            indexQuery = indexQuery + 1;
+        }
+        while (indexQuery != 6);
+    }
+        /*
         String data1 = scanner.next();
         string[0] = data1.toString();
 
@@ -29,11 +45,5 @@ public class Task1 {
         System.out.print("Masukkan Input Data Kelima : ");
         String data5 = scanner.next();
         string[4] = data5.toString();
-
-        do {
-            System.out.println("Data ke: " + index + " : " + string[index]);
-            index = index + 1;
-        }
-        while (index != 5);
-    }
+        */
 }
